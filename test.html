@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<pre>
+<script>
+// JavaScript test code to open a local JavaScript file for execution in browser window
+
+var url = new URL(window.location);
+var ele = document.createElement("script");
+ele.setAttribute("src", url.searchParams.get("file"));
+document.head.appendChild(ele)
+</script>
+</pre>
